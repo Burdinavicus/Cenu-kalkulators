@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mājaslapu izstrādes kalkulators</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mājaslapu izstrādes kalkulators</h1>
+  </header>
+
+  <main>
+    <form id="calcForm">
+      <label for="sections">Sadaļu skaits:</label>
+      <input type="number" id="sections" name="sections" min="1" value="1" required />
+
+      <fieldset>
+        <legend>Izvēlies nepieciešamās funkcionalitātes:</legend>
+        <label><input type="checkbox" name="features" value="100" /> Kontaktu forma</label>
+        <label><input type="checkbox" name="features" value="150" /> Interneta veikals</label>
+        <label><input type="checkbox" name="features" value="120" /> Bloga sadaļa</label>
+        <label><input type="checkbox" name="features" value="80" /> Multivalodas atbalsts</label>
+      </fieldset>
+
+      <button type="submit">Aprēķināt cenu</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <h2>Aprēķina rezultāts</h2>
+      <p id="priceBreakdown"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 WebStudio SIA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
